@@ -1,0 +1,31 @@
+#product-info  {
+    product-name: "tidy";
+    version: "4aug00";
+    original-source-location: "http://sourceforge.net/projects/tidy/files/tidy/04aug00/tidy4aug00.tgz/download";
+    original-source-website: "http://tidy.sourceforge.net/";
+    license: "http://tidy.cvs.sourceforge.net/tidy/tidy/include/tidy.h?view=markup";
+    packager: "Petter Strandmark";
+}
+
+
+x64  {
+    compiler: vc10-x64 ;
+ 
+    targets: { 
+				//Program
+				"tidy.exe",
+				"tab2space.exe",
+			} ;
+ 
+    build-command: @"
+			msbuild /p:Platform=x64 /p:Configuration=Release project\tidy\tidy.sln
+			";
+
+    clean-command: @"
+			 rmdir /S /Q intermediate
+			 del /Q tidy.exe
+			 del /Q tidy.pdb
+			 del /Q tab2space.exe
+			 del /Q tabs2space.pdb
+			";
+}
