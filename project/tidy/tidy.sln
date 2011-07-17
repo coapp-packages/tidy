@@ -26,6 +26,7 @@ Global
 		{DBE985E8-13A8-4373-AE14-056FCAF36208}.Release|Win32.ActiveCfg = Release|Win32
 		{DBE985E8-13A8-4373-AE14-056FCAF36208}.Release|Win32.Build.0 = Release|Win32
 		{DBE985E8-13A8-4373-AE14-056FCAF36208}.Release|x64.ActiveCfg = Release|x64
+		{DBE985E8-13A8-4373-AE14-056FCAF36208}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
